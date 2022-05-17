@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		B84E92D82832D6790043CFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E92D72832D6790043CFCB /* AppDelegate.swift */; };
 		B84E92DA2832D6790043CFCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E92D92832D6790043CFCB /* SceneDelegate.swift */; };
-		B84E92DC2832D6790043CFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E92DB2832D6790043CFCB /* ViewController.swift */; };
-		B84E92DF2832D6790043CFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E92DD2832D6790043CFCB /* Main.storyboard */; };
 		B84E92E12832D67C0043CFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84E92E02832D67C0043CFCB /* Assets.xcassets */; };
 		B84E92E42832D67C0043CFCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E92E22832D67C0043CFCB /* LaunchScreen.storyboard */; };
+		B84E92ED2832D6B40043CFCB /* ViewOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84E92EC2832D6B40043CFCB /* ViewOne.xib */; };
+		B84E92F02832D73A0043CFCB /* ViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E92EF2832D73A0043CFCB /* ViewOne.swift */; };
+		B84E92F32832D8240043CFCB /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84E92F22832D8240043CFCB /* MyViewController.swift */; };
+		B84E92F62832D8450043CFCB /* MyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84E92F52832D8450043CFCB /* MyStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B84E92D42832D6790043CFCB /* Netology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84E92D72832D6790043CFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B84E92D92832D6790043CFCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B84E92DB2832D6790043CFCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B84E92DE2832D6790043CFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84E92E02832D67C0043CFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84E92E32832D67C0043CFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84E92E52832D67C0043CFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B84E92EC2832D6B40043CFCB /* ViewOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewOne.xib; sourceTree = "<group>"; };
+		B84E92EF2832D73A0043CFCB /* ViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOne.swift; sourceTree = "<group>"; };
+		B84E92F22832D8240043CFCB /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		B84E92F52832D8450043CFCB /* MyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				B84E92D72832D6790043CFCB /* AppDelegate.swift */,
 				B84E92D92832D6790043CFCB /* SceneDelegate.swift */,
-				B84E92DB2832D6790043CFCB /* ViewController.swift */,
-				B84E92DD2832D6790043CFCB /* Main.storyboard */,
 				B84E92E02832D67C0043CFCB /* Assets.xcassets */,
 				B84E92E22832D67C0043CFCB /* LaunchScreen.storyboard */,
 				B84E92E52832D67C0043CFCB /* Info.plist */,
+				B84E92EC2832D6B40043CFCB /* ViewOne.xib */,
+				B84E92EF2832D73A0043CFCB /* ViewOne.swift */,
+				B84E92F22832D8240043CFCB /* MyViewController.swift */,
+				B84E92F52832D8450043CFCB /* MyStoryboard.storyboard */,
 			);
 			path = Netology;
 			sourceTree = "<group>";
@@ -125,8 +131,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B84E92E42832D67C0043CFCB /* LaunchScreen.storyboard in Resources */,
+				B84E92F62832D8450043CFCB /* MyStoryboard.storyboard in Resources */,
+				B84E92ED2832D6B40043CFCB /* ViewOne.xib in Resources */,
 				B84E92E12832D67C0043CFCB /* Assets.xcassets in Resources */,
-				B84E92DF2832D6790043CFCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84E92DC2832D6790043CFCB /* ViewController.swift in Sources */,
+				B84E92F02832D73A0043CFCB /* ViewOne.swift in Sources */,
 				B84E92D82832D6790043CFCB /* AppDelegate.swift in Sources */,
+				B84E92F32832D8240043CFCB /* MyViewController.swift in Sources */,
 				B84E92DA2832D6790043CFCB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B84E92DD2832D6790043CFCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B84E92DE2832D6790043CFCB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B84E92E22832D67C0043CFCB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
