@@ -2,7 +2,7 @@
 //  FeedViewController.swift
 //  Navigation
 //
-//  Created by Ниночка on 23.04.2022.
+//  Created by Александр on 23.04.2022.
 //
 
 import UIKit

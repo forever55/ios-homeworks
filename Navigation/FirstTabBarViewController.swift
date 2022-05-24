@@ -2,7 +2,7 @@
 //  FirstTabBarViewController.swift
 //  Navigation
 //
-//  Created by Ниночка on 23.04.2022.
+//  Created by Александр on 23.04.2022.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 class FirstTabBarViewController: UITabBarController {
 
     let firstVC = ViewController()
-    let secondVC = SecondTabBarViewController()
+    let secondVC = ProfileViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +20,14 @@ class FirstTabBarViewController: UITabBarController {
     private func setupControllers() {
         
         let firstNavController = UINavigationController(rootViewController: firstVC)
-        firstVC.tabBarItem.title = "Первый"
-        firstVC.tabBarItem.image = UIImage(named: "Unknown")
+        firstVC.tabBarItem.title = "Feed"
+        firstVC.tabBarItem.image = UIImage(named: "4655650")
         firstVC.navigationItem.title = "Лента пользователя"
         
         let secondNavController = UINavigationController(rootViewController: secondVC)
-        secondVC.tabBarItem.title = "Второй"
-        secondVC.tabBarItem.image = UIImage(named: "картинка 1")
-        secondVC.navigationItem.title = "Профиль пользователя"
+        secondVC.tabBarItem.title = "Profile"
+        secondVC.tabBarItem.image = UIImage(named: "4655707")
+        secondVC.navigationItem.title = "Profile"
         
         viewControllers = [firstNavController, secondNavController]
     }
