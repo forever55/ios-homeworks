@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Netology
 //
-//  Created by Александр Моксонов on 17.05.2022.
+//  Created by Александр Моксонов on 25.05.2022.
 //
 
 import UIKit
