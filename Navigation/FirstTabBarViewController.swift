@@ -2,15 +2,15 @@
 //  FirstTabBarViewController.swift
 //  Navigation
 //
-//  Created by Александр on 23.04.2022.
+//  Created by Alexander on 23.04.2022.
 //
 
 import UIKit
 
 class FirstTabBarViewController: UITabBarController {
 
-    let firstVC = ViewController()
-    let secondVC = ProfileViewController()
+    let firstVC = FeedViewController()
+    let secondVC = TwoProfileViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

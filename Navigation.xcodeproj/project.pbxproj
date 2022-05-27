@@ -17,6 +17,8 @@
 		937938632826E4CA0017F2F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937938622826E4CA0017F2F5 /* SceneDelegate.swift */; };
 		937938662826E7250017F2F5 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937938652826E7250017F2F5 /* ProfileHeaderView.swift */; };
 		937938682826E7400017F2F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937938672826E7400017F2F5 /* ProfileViewController.swift */; };
+		93B158EE282FFFFB00A7106B /* TwoProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B158ED282FFFFB00A7106B /* TwoProfileViewController.swift */; };
+		93B158F028300EB000A7106B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B158EF28300EB000A7106B /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		937938622826E4CA0017F2F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		937938652826E7250017F2F5 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		937938672826E7400017F2F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		93B158ED282FFFFB00A7106B /* TwoProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoProfileViewController.swift; sourceTree = "<group>"; };
+		93B158EF28300EB000A7106B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				9364824C28131B1D008BD0BF /* ViewController.swift */,
 				9364825E28132205008BD0BF /* SecondTabBarViewController.swift */,
 				93361CB9281441F100F7C768 /* FeedViewController.swift */,
+				93B158EF28300EB000A7106B /* PostViewController.swift */,
 				9364825C28132155008BD0BF /* FirstTabBarViewController.swift */,
 				9364825128131B22008BD0BF /* Assets.xcassets */,
 				9364825328131B22008BD0BF /* LaunchScreen.storyboard */,
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				937938652826E7250017F2F5 /* ProfileHeaderView.swift */,
+				93B158ED282FFFFB00A7106B /* TwoProfileViewController.swift */,
 				937938672826E7400017F2F5 /* ProfileViewController.swift */,
 			);
 			path = Profile;
@@ -158,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9364825F28132205008BD0BF /* SecondTabBarViewController.swift in Sources */,
+				93B158EE282FFFFB00A7106B /* TwoProfileViewController.swift in Sources */,
 				9364824D28131B1D008BD0BF /* ViewController.swift in Sources */,
 				93361CBA281441F100F7C768 /* FeedViewController.swift in Sources */,
+				93B158F028300EB000A7106B /* PostViewController.swift in Sources */,
 				9364824928131B1D008BD0BF /* AppDelegate.swift in Sources */,
 				937938662826E7250017F2F5 /* ProfileHeaderView.swift in Sources */,
 				9364825D28132155008BD0BF /* FirstTabBarViewController.swift in Sources */,
@@ -318,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ninochka.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ninochka.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = Alexander.Navigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

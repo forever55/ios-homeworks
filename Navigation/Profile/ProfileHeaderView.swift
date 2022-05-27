@@ -2,14 +2,14 @@
 //  ProfileHeaderView.swift
 //  Navigation
 //
-//  Created by Александр on 08.05.2022.
+//  Created by Ниночка on 08.05.2022.
 //
 
 import UIKit
 
 class ProfileHeaderView: UIView {
 
-    private lazy var avatarProfile: UIImageView = {
+    private lazy var avatarImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: "Image1")
@@ -21,7 +21,7 @@ class ProfileHeaderView: UIView {
     }()
 
 
-    private lazy var buttonProfile: UIButton = {
+    private lazy var setStatusButton: UIButton = {
         var button = UIButton()
         button.setTitle("Show status", for: .normal)
         button.titleLabel?.textColor = .white
@@ -41,7 +41,7 @@ class ProfileHeaderView: UIView {
         print("Waiting for something...")
     }
 
-    private lazy var nameProfile: UILabel = {
+    private lazy var fullNameLabel: UILabel = {
         var name = UILabel()
         name.text = "Happy animal"
         name.textAlignment = .left
@@ -51,7 +51,7 @@ class ProfileHeaderView: UIView {
         return name
     }()
 
-    private lazy var textProfile: UILabel = {
+    private lazy var statusLabel: UILabel = {
         var text = UILabel()
         text.text = "Waiting for something..."
         text.textAlignment = .left
@@ -71,30 +71,30 @@ class ProfileHeaderView: UIView {
     }
 
     func setup() {
-        self.addSubview(avatarProfile)
-        self.addSubview(nameProfile)
-        self.addSubview(buttonProfile)
-        self.addSubview(textProfile)
+        self.addSubview(avatarImageView)
+        self.addSubview(fullNameLabel)
+        self.addSubview(setStatusButton)
+        self.addSubview(statusLabel)
     
     NSLayoutConstraint.activate([
 //        avatarProfile
-        self.avatarProfile.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
-        self.avatarProfile.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-        self.avatarProfile.widthAnchor.constraint(equalToConstant: 100),
-        self.avatarProfile.heightAnchor.constraint(equalToConstant: 100),
+        self.avatarImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 16),
+        self.avatarImageView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+        self.avatarImageView.widthAnchor.constraint(equalToConstant: 100),
+        self.avatarImageView.heightAnchor.constraint(equalToConstant: 100),
 //        nameProfile
-        self.nameProfile.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 27),
-        self.nameProfile.leadingAnchor.constraint(equalTo: self.avatarProfile.trailingAnchor, constant: 16),
-        self.nameProfile.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: 0),
+        self.fullNameLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 27),
+        self.fullNameLabel.leadingAnchor.constraint(equalTo: self.avatarImageView.trailingAnchor, constant: 16),
+        self.fullNameLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: 0),
 //        buttonProfile
-        self.buttonProfile.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -16),
-        self.buttonProfile.topAnchor.constraint(equalTo: self.avatarProfile.bottomAnchor, constant: 16),
-        self.buttonProfile.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-        self.buttonProfile.heightAnchor.constraint(equalToConstant: 50),
+        self.setStatusButton.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -16),
+        self.setStatusButton.topAnchor.constraint(equalTo: self.avatarImageView.bottomAnchor, constant: 16),
+        self.setStatusButton.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+        self.setStatusButton.heightAnchor.constraint(equalToConstant: 50),
 //        textProfile
-        self.textProfile.bottomAnchor.constraint(equalTo: self.buttonProfile.topAnchor, constant: -34),
-        self.textProfile.leadingAnchor.constraint(equalTo: self.avatarProfile.trailingAnchor, constant: 16),
-        self.textProfile.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: 0),
+        self.statusLabel.bottomAnchor.constraint(equalTo: self.setStatusButton.topAnchor, constant: -34),
+        self.statusLabel.leadingAnchor.constraint(equalTo: self.avatarImageView.trailingAnchor, constant: 16),
+        self.statusLabel.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: 0),
     ])
     }
 }

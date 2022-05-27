@@ -2,44 +2,66 @@
 //  FeedViewController.swift
 //  Navigation
 //
-//  Created by Александр on 23.04.2022.
+//  Created by Alexander on 23.04.2022.
 //
 
 import UIKit
 
-struct Post {
-    var title = "Маша и Медведь"
-}
-
 class FeedViewController: UIViewController {
     
-    var post: Post?
-
+    private let stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.backgroundColor = .darkGray
+        stack.axis = .vertical
+        stack.distribution = .fill
+        stack.alignment = .center
+        stack.spacing = 10
+        stack.layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        stack.isLayoutMarginsRelativeArrangement = true
+        return stack
+    }()
+    
+    private let buttonOne: UIButton = {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 250, height: 60))
+        button.setTitle("Кнопка 1", for: .normal)
+        button.backgroundColor = .systemBlue
+        button.addTarget(self, action: #selector(buttonsAction), for: .touchUpInside)
+        return button
+    }()
+    
+    private let buttonTwo: UIButton = {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 250, height: 60))
+        button.setTitle("Кнопка 2", for: .normal)
+        button.backgroundColor = .systemBlue
+        button.addTarget(self, action: #selector(buttonsAction), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
-        makeButton()
+        self.navigationItem.title = "Моя страница"
+        self.view.backgroundColor = .lightText
+        
+        setup()
     }
     
-    private func makeButton() {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
-        button.center = view.center
-        button.setTitle("Назад", for: .normal)
-        button.backgroundColor = .brown
-        button.addTarget(self, action: #selector(tapAction), for: .touchUpInside)
-        view.addSubview(button)
+    private func setup() {
+        view.addSubview(stackView)
+        stackView.addArrangedSubview(buttonOne)
+        stackView.addArrangedSubview(buttonTwo)
+        
+        NSLayoutConstraint.activate([
+            self.stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            self.stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
     
-    @objc private func tapAction() {
-        let alert = UIAlertController(title: "Перейти назад", message: "Вы уверены, что хотите выйти?", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Выйти", style: .default) { _ in
-            self.dismiss(animated: true)
-            //self.navigationController?.popViewController(animated: true)
-        }
-        let cancelAction = UIAlertAction(title: "Отмена", style: .destructive)
-        alert.addAction(cancelAction)
-        alert.addAction(okAction)
-        present(alert, animated: true)
+    @objc func buttonsAction() {
+        let postView = PostViewController()
+        navigationController?.pushViewController(postView, animated: true)
     }
-
 }
+
+    
+

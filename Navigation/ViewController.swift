@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Navigation
 //
-//  Created by Александр on 23.04.2022.
+//  Created by Alexander on 23.04.2022.
 //
 
 import UIKit
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @objc private func tapAction() {
         let vc = FeedViewController()
-        vc.post = .none
+//        vc.post = .none
         present(vc, animated: true)
     }
 
