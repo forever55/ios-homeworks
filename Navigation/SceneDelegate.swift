@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Netology_IB_Instruments
 //
-//  Created by Alexander on 09.04.2022.
+//  Created by Александр on 09.04.2022.
 //
 
 import UIKit
@@ -15,10 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = FirstTabBarViewController()
-        window?.makeKeyAndVisible()
-        
+        self.window = UIWindow(windowScene: windowScene)
+        self.window?.rootViewController = FirstTabBarViewController()
+        self.window?.makeKeyAndVisible()
+        self.window?.overrideUserInterfaceStyle = .light
         
     }
 
