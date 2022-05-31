@@ -22,7 +22,7 @@ final class ProfileHeaderView: UIView {
     
     private lazy var fullNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Happy animal"
+        label.text = "Курорт Юга России"
         label.font = .systemFont(ofSize: 18, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -121,8 +121,7 @@ final class ProfileHeaderView: UIView {
             self.statusTextField.text = .none
             self.statusLabel.textColor = .black
         } else {
-            self.statusLabel.shake()
-            self.statusLabel.textColor = .gray
+                        self.statusLabel.textColor = .gray
             self.statusLabel.text = "Waiting status..."
         }
         self.endEditing(true)

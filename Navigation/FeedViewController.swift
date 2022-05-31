@@ -12,8 +12,8 @@ final class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Моя страница"
         self.view.backgroundColor = .lightText
-        view.backgroundColor = .white
         setupLayout()
         setup()
     }
@@ -46,7 +46,8 @@ final class FeedViewController: UIViewController {
     }(UIButton())
     
     @objc func buttonsAction(sender: UIButton!) {
-        self.navigationController?.pushViewController(PostViewController(), animated: true)
+        let postView = PostViewController()
+        navigationController?.pushViewController(postView, animated: true)
     }
     
     private lazy var buttonTwo: UIButton = {

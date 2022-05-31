@@ -14,7 +14,7 @@ class FirstTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupControllers()
+        setupControllers()
         view.backgroundColor = .systemBackground
     }
 
