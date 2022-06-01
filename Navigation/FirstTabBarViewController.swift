@@ -2,7 +2,7 @@
 //  FirstTabBarViewController.swift
 //  Navigation
 //
-//  Created by Александр on 23.04.2022.
+//  Created by Alexander on 28.05.2022.
 //
 
 import UIKit
@@ -15,7 +15,6 @@ class FirstTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupControllers()
-        view.backgroundColor = .systemBackground
     }
 
     private func setupControllers() {
@@ -28,7 +27,7 @@ class FirstTabBarViewController: UITabBarController {
         let secondNavController = UINavigationController(rootViewController: secondVC)
         secondVC.tabBarItem.title = "Profile"
         secondVC.tabBarItem.image = UIImage(named: "4655707")
-        secondVC.navigationItem.title = "Profile"
+        secondVC.navigationItem.title = ""
         
         viewControllers = [firstNavController, secondNavController]
     }
