@@ -2,7 +2,7 @@
 //  FirstTabBarViewController.swift
 //  Navigation
 //
-//  Created by Alexander on 28.05.2022.
+//  Created by Ниночка on 23.04.2022.
 //
 
 import UIKit
@@ -15,7 +15,7 @@ class FirstTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupControllers()
-    }
+            }
 
     private func setupControllers() {
         
